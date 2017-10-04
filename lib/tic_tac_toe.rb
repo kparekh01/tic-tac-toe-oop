@@ -1,16 +1,16 @@
 class TicTacToe
-	load 'player.rb'
-	load 'board.rb'
+  load 'player.rb'
+  load 'board.rb'
 
   #initialize a new board when a new instance of TicTacToe is created
   def initialize
-		@new_board = Board.new
- 	end
+    @new_board = Board.new
+  end
 
   #get the name and set the position of the player and computer
-	def set_name_and_position
-		puts "Welcome to Tic-Tac-Toe. Please enter your name:"
-		name = gets.chomp
+  def set_name_and_position
+    puts "Welcome to Tic-Tac-Toe. Please enter your name:"
+    name = gets.chomp
     puts "Please choose which player you want to be(1('X') or 2('O'))"
     position = gets.chomp.to_i
     if position == 1
@@ -21,10 +21,10 @@ class TicTacToe
       @player1 = Player.new(name, "o")
     end
     puts "#{@player1.name} is #{@player1.character} and Tron is #{@computer.character}"
-	end
+  end
 
   #represents one turn for a player or computer(random picks)
-	def make_move(player)
+  def make_move(player)
     #available options for the computer to pick from
     available_moves = @new_board.board.join.scan(/\d/)
     if player.name == "Tron"
