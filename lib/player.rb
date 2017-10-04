@@ -1,7 +1,7 @@
 class Player
-	attr_accessor :name, :character
-
-	#initialize players
+  attr_accessor :name, :character
+  
+  #initialize players
   def initialize(name,character)
 	@name = name
 	@character = character
