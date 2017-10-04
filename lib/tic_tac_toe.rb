@@ -39,10 +39,10 @@ class TicTacToe
       @new_board.turn(position, character)
       @new_board.display_board
     end
-	end
+  end
 
   #represents the flow of the game for the computer and the player
-	def play_game
+  def play_game
     @new_board.display_board
     set_name_and_position
     #course of game flow until it's over.  2 scenarios for the computer's character
