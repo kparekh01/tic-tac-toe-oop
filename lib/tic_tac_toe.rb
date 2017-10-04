@@ -50,15 +50,15 @@ class TicTacToe
       if @computer.character.downcase == 'x'
         if @new_board.turn_count % 2 == 0
           make_move(@computer)
-  		  else
-  			  make_move(@player1)
-  		  end
+        else
+          make_move(@player1)
+  	end
       else
         if @new_board.turn_count % 2 == 0
           make_move(@player1)
-  		  else
-  			  make_move(@computer)
-  		  end
+        else
+  	  make_move(@computer)
+  	end
       end
     end
 
@@ -83,5 +83,5 @@ class TicTacToe
     else
       abort ("Thanks for Playing! Bye Bye!")
     end
-	end
+  end
 end
