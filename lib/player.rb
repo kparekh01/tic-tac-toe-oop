@@ -3,7 +3,7 @@ class Player
   
   #initialize players
   def initialize(name,character)
-	@name = name
-	@character = character
+    @name = name
+    @character = character
   end
 end
